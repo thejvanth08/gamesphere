@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+:root {
+  --primary-color: #ff8b68;
+  --secondary-color: #080b1b;
+  --primary-bg: #f0efed;
+  --secondary-bg: #1a2456;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  font-family: "Tajawal", sans-serif;
+  background-color: var(--primary-bg);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+/* Utility classes */
+.container {
+  margin-inline: 1.5rem;
+  max-width: 1024px;
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  /* to define the template or strcuture for grid cols */
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.leading {
+  font-size: 1.2rem;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: var(--secondary-bg);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 16px;
+}
+
+/* Header */
+.header {
+  /* to center the navbar */
+  justify-content: center;
+}
+
+.navbar {
+  font-family: "Roboto", sans-serif;
+  position: fixed;
+  width: 98%;
+  top: 6px;
+  /* stretches the flex container -> leaves 10px on left & right */
+  /* left: 10px;
+  right: 10px; */
+  background-color: var(--secondary-bg);
+  color: pink;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 10px;
+  z-index: 1000;
+}
+
+.logo-container {
+  align-items: center;
+}
+
+.logo-icon {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+.logo-name {
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.logo-container a {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: pink;
+  font-variant: small-caps;
+  align-items: center;
+}
+
+.menu-container i {
+  font-size: 1.3rem;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  height: 70vh;
+  background-image: linear-gradient(180deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.47)),
+    url(./assets/main-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: pink;
+  text-align: center;
+}
+
+.hero .flex {
+  justify-content: center;
+  align-items: center;
+  /* to make the container div center -> by default it only present in left side */
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  font-variant: small-caps;
+  margin-bottom: 10px;
+}
+
+/* Gallery-1 */
+.gallery-1 {
+  padding: 20px 0;
+}
+
+.card {
+  grid-column: span 8;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.card-img {
+  position: relative;
+}
+
+.card-img .tag {
+  position: absolute;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  right: 0;
+  top: 16px;
+  font-size: 1.1rem;
+  padding: 8px;
+  font-weight: 500;
+}
+
+.card-img img {
+  width: 100%;
+}
+
+.card-content {
+  position: relative;
+}
+
+.card-content h4 {
+  font-size: 1.5rem;
+  /* display: inline-block; */
+}
+
+.card-content p {
+  font-size: 1.1rem;
+}
+
+.card-content .btn {
+  display: none;
+  cursor: pointer;
+}
+.card:hover .btn {
+  display: initial;
+}
+/* Msg */
+.msg {
+  width: 100%;
+  height: 350px;
+  background-image: url(./assets/msg-1.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+.msg .container {
+  text-align: center;
+  padding-top: 2rem;
+  color: var(--secondary-bg);
+}
+
+.msg h2 {
+  font-size: 2.4rem;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+/* to hide scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Breakpoints */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
