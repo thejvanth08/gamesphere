@@ -8,6 +8,7 @@
   outline: none;
   border: none;
   text-decoration: none;
+  list-style-type: none;
 }
 
 :root {
@@ -62,7 +63,7 @@ h3 {
 
 .btn {
   display: inline-block;
-  padding: 8px 12px;
+  padding: 10px 16px;
   background-color: var(--secondary-bg);
   color: #fff;
   font-size: 0.8rem;
@@ -105,6 +106,7 @@ h3 {
   font-weight: 500;
   font-size: 1rem;
   letter-spacing: 2px;
+  font-weight: 600;
 }
 
 .logo-container a {
@@ -175,6 +177,9 @@ h3 {
 
 .card-img img {
   width: 100%;
+  /* to make more responsive height & to avoid flickering of website during hover */
+  height: 60vw;
+  object-fit: cover;
 }
 
 .card-content {
@@ -183,6 +188,7 @@ h3 {
 
 .card-content h4 {
   font-size: 1.5rem;
+  margin-top: 14px;
   /* display: inline-block; */
 }
 
@@ -193,6 +199,8 @@ h3 {
 .card-content .btn {
   display: none;
   cursor: pointer;
+  /* to make it little up from the para */
+  top: -10px;
 }
 .card:hover .btn {
   display: initial;
@@ -221,6 +229,60 @@ h3 {
 /* to hide scrollbar */
 ::-webkit-scrollbar {
   display: none;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--secondary-bg);
+  color: pink;
+  font-size: 0.9rem;
+  padding: 50px 8px 20px;
+}
+
+.footer a {
+  color: pink;
+}
+
+.footer .grid {
+  /* to leave space between footer details & copyrights */
+  padding-bottom: 50px;
+}
+
+.footer .grid div {
+  margin-bottom: 16px;
+}
+
+.footer .grid div:nth-child(1) {
+  grid-column: 1 / span 4;
+}
+
+.footer .grid div:nth-child(2) {
+  grid-column: 5 / span 4;
+}
+
+.footer .grid div:nth-child(3) {
+  grid-column: 1 / span 4;
+}
+
+.footer .grid div:nth-child(4) {
+  grid-column: 5 / span 4;
+}
+
+.footer h4 {
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.footer a {
+  line-height: 1.8;
+}
+
+.footer a:hover {
+  text-decoration-line: underline;
+  color: rgb(220, 146, 158);
+}
+.copyright {
+  text-align: center;
 }
 
 /* Breakpoints */
