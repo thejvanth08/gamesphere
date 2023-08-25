@@ -9,7 +9,7 @@ let audioPrev, photoPrev, videoPrev, miniPrev;
 audioImg.addEventListener("mouseover", () => {
   audioPrev = audioImg.src;
   //   using relative path from root of the website/domain/server
-  audioImg.src = "/assets/audio-11.webp";
+  audioImg.src = "assets/audio-11.webp";
 });
 
 audioImg.addEventListener("mouseout", () => {
@@ -19,7 +19,7 @@ audioImg.addEventListener("mouseout", () => {
 photoImg.addEventListener("mouseover", () => {
   photoPrev = photoImg.src;
   //   using relative path from root of the website/domain/server
-  photoImg.src = "/assets/photo-22.webp";
+  photoImg.src = "assets/photo-22.webp";
 });
 
 photoImg.addEventListener("mouseout", () => {
@@ -29,7 +29,7 @@ photoImg.addEventListener("mouseout", () => {
 videoImg.addEventListener("mouseover", () => {
   videoPrev = videoImg.src;
   //   using relative path from root of the website/domain/server
-  videoImg.src = "/assets/video-33.webp";
+  videoImg.src = "assets/video-33.webp";
 });
 
 videoImg.addEventListener("mouseout", () => {
@@ -39,7 +39,7 @@ videoImg.addEventListener("mouseout", () => {
 miniImg.addEventListener("mouseover", () => {
   miniPrev = miniImg.src;
   //   using relative path from root of the website/domain/server
-  miniImg.src = "/assets/mini-11.webp";
+  miniImg.src = "assets/mini-11.webp";
 });
 
 miniImg.addEventListener("mouseout", () => {
